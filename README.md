@@ -5,7 +5,26 @@ Yii2 Behavior that records User IP address on Updates/Inserts
 
 Installation
 ------------
-Put the IpBehavior.php file into the app\behaviors folder or any other folder (just don't forget to modify the namespace then).
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+Either run
+
+```sh
+php composer.phar require ruskid/yii2-ip-behavior "*"
+```
+
+or add
+
+```json
+"ruskid/yii2-ip-behavior": "*"
+```
+
+to the require section of your `composer.json` file.
+
+Or
+------------
+I wanted to test the composer xd. You can just copy paste IpBehavior.php to behaviors folder or any folder you like. (just don't forget to change the namespace).
 
 Configuring
 --------------------------
