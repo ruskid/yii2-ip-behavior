@@ -9,6 +9,7 @@
 namespace app\behaviors;
 
 use yii\behaviors\AttributeBehavior;
+use yii\db\BaseActiveRecord;
 
 /**
  * @author Victor Demin <demmbox@gmail.com>
