@@ -12,9 +12,9 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "*"
+        
     },
     "autoload": {
-        "classmap": [ "./IpBehavior.php" ]
+        "psr-4": {"ruskid\\": ""}
     }
 }
