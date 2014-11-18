@@ -1,0 +1,20 @@
+{
+    "name": "ruskid/yii2-ip-behavior",
+    "type": "library",
+    "description": "Yii2 Behavior that records User IP address on Updates/Inserts",
+    "keywords": ["yii","ip","behavior"],
+    "homepage": "https://github.com/ruskid/yii2-ip-behavior",
+    "license": "BSD-3",
+    "authors": [
+        {
+            "name": "Victor Demin",
+            "email": "demmbox@gmail.com",
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "classmap": [ "./IpBehavior.php" ]
+    }
+}
