@@ -30,10 +30,9 @@ class IpBehavior extends AttributeBehavior {
     public $updatedIpAttribute = 'updated_ip';
 
     /**
-     * @var callable|string
-     * This can be either an anonymous function that returns the IP value or a string.
-     * If not set, it will use the value of `\Yii::$app->request->userIp` to set the attributes.
-     * NOTE! Null is returned if the user IP address cannot be detected.
+     * @var null|string
+     * This can be the value to record.  If not set, it will use the value of `\Yii::$app->request->userIp` 
+     * to set the attributes. NOTE! Null is returned if the user IP address cannot be detected.
      */
     public $value;
 
@@ -55,11 +54,7 @@ class IpBehavior extends AttributeBehavior {
      * @inheritdoc
      */
     protected function getValue($event) {
-        if (is_string($this->value)) {
-            return $this->value;
-        } else {
-            return $this->value !== null ? call_user_func($this->value, $event) : \Yii::$app->request->userIp;
-        }
+        return $this->value !== null ? $this->value : \Yii::$app->request->userIp;
     }
 
     /**
