@@ -16,6 +16,8 @@
     },
     "minimum-stability": "dev",
     "autoload": {
-        "files": ["./IpBehavior.php"]
+         "psr-0": {
+            "YiiBehaviors": "/",
+        }
     }
 }
