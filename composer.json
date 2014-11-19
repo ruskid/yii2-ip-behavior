@@ -17,7 +17,7 @@
     "minimum-stability": "dev",
     "autoload": {
          "psr-0": {
-            "YiiBehaviors": "/",
+            "YiiBehaviors": "/"
         }
     }
 }
