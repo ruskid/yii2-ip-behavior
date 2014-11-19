@@ -11,13 +11,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```sh
-php composer.phar require ruskid/yii2-ip-behavior "*"
+php composer.phar require ruskid/yii2-ip-behavior "dev-master"
 ```
 
 or add
 
 ```json
-"ruskid/yii2-ip-behavior": "*"
+"ruskid/yii2-ip-behavior": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -26,7 +26,7 @@ Or
 ------------
 I wanted to test the composer xd. You can just copy paste IpBehavior.php to behaviors folder or any folder you like. (just don't forget to change the namespace).
 
-Configuring
+Usage
 --------------------------
 You can call it like this.
 
@@ -34,7 +34,7 @@ You can call it like this.
 public function behaviors() {
         return [
             ...
-            'userIp' => [
+            'ip' => [
                 'class' => IpBehavior::className(),
                 'attributes' => [
                     ActiveRecord::EVENT_BEFORE_INSERT => ['created_ip', 'updated_ip'],
@@ -51,7 +51,7 @@ Or like this. where value can be a string or an anonymous function that will ret
 public function behaviors() {
         return [
             ...
-            'userIp' => [
+            'ip' => [
                 'class' => IpBehavior::className(),
                 'createdIpAttribute' => 'created_ip',
                 'updatedIpAttribute' => 'updated_ip',
