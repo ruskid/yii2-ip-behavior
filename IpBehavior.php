@@ -6,7 +6,7 @@
  * @license http://opensource.org/licenses/BSD-3-Clause
  */
 
-namespace ruskid;
+namespace ruskid\YiiBehaviors;
 
 use yii\behaviors\AttributeBehavior;
 use yii\db\BaseActiveRecord;
